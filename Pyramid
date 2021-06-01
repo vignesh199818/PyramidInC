@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int p,t,c,n,g;
+    printf("enter the number of pyramids = \n");
+    scanf("%d",&n);
+     for(p=(n-1);p>=0;p--)
+    {
+        g=0;
+        for(t=p;t>0;t--)
+        {
+            printf(" ");
+
+        }
+        for(t=1;t<=n-p;t++)
+        {
+            g=g+1;
+            printf("%c",64+g);
+
+        }
+         for(t=t-2;t>0;t--)
+        {
+            g=g-1;
+            printf("%c",64+g);
+
+        }
+
+        printf("\n");
+
+    }
+    return 0;
+}
